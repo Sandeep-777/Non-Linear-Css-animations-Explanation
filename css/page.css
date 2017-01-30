@@ -1,0 +1,180 @@
+body{
+	position: absolute;
+	top:0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+}
+#myCanvas{
+	position: absolute;
+	top: 0%;
+	left: 0px;
+	z-index: 3;
+}
+#curveCanvas{
+	position: absolute;
+	top: 0%;
+	right: 0px;
+	z-index: 2;
+}
+#gridCanvas{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	z-index: 2;
+}
+.grids{
+	position: absolute;
+	top:0%;
+	left: 0%;
+	height: 100%;
+	width: 83%;
+}
+.total{
+	position: absolute;
+	border: 3px solid black;
+	top:0%;
+	left: 0%;
+	height: 100%;
+	width: 36%;
+}
+.push{
+	position: absolute;
+	border: 3px solid red;
+	top:30px;
+	left: 0px;
+	height: 10%;
+	width: 10%;
+}
+
+.animation_div{
+	position: absolute;
+	top:0%;
+	left: 36%;
+	height: 80%;
+	width: 64%;
+	text-align:center;
+}
+
+.animation_bg{
+	position: absolute;
+	bottom:0%;
+	left: 25%;
+	width: 50%;
+	height: 70%;
+}
+
+.ball{
+	position: absolute;
+	bottom: 23%;
+	left: 15%;
+	height: 4%;
+	z-index: 20;
+	/*-webkit-animation:  move_y 6s cubic-bezier(.12,.3,.75,.5)  forwards, move_x 6s linear forwards;
+	animation: move_y 6s cubic-bezier(.12,.3,.75,.5) forwards, move_x 6s linear forwards;*/
+}
+/*67 64*/
+
+.b1_text {
+	position: absolute;
+	top: 2%;
+	width: 100%;
+	color: #6f6f6f;
+	font-size: 3.3vmin;
+}
+.ip_time{
+	position: absolute;
+	left: 30%;
+	top: 15%;
+	width: 7%;
+	color: #6f6f6f;
+	font-size: 3.3vmin;
+	text-align: center;
+}
+.text_time{
+	position: absolute;
+	left: 40%;
+	top: 15%;
+	color: #6f6f6f;
+	font-size: 3vmin;
+	line-height: 5vmin;
+	text-align: center;
+}
+
+.button_div{
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	top:80%;
+	left: 36%;
+	height: 20%;
+	width: 64%;
+	text-align:center;
+}
+
+.bt_1 {
+	font-size: 4vmin;
+	cursor: pointer;
+	order: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 22%;
+	height: 60%;
+	background-color: #FF7F7F;
+	border-radius: 4vmin;
+	border: 2px solid #AD0303;
+}
+.bt_2 {
+	font-size: 4vmin;
+	cursor: pointer;
+	order: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 22%;
+	height: 60%;
+	background-color: #7FC9FF;
+	border-radius: 4vmin;
+	border: 2px solid #195A88;
+}
+.bt_3 {
+	font-size: 4vmin;
+	cursor: pointer;
+	order: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 22%;
+	height: 60%;
+	background-color: #7FFFC5;
+	border-radius: 4vmin;
+	border: 2px solid #37765A;
+}
+
+.ball_move {
+	-webkit-animation:  move_y 6s cubic-bezier(.12,.3,.75,.5) , move_x 6s linear;
+	animation: move_y 6s cubic-bezier(.12,.3,.75,.5), move_x 6s linear;
+}
+@-webkit-keyframes
+move_y {	
+	0% {transform: translateY(0%);}
+	100% {transform: translateY(-1250%);}
+}
+@keyframes
+move_y {
+	0% {transform: translateY(0%);}
+	100% {transform: translateY(-1250%);}
+}
+
+@-webkit-keyframes
+move_x {
+	0% {left: 15%;}
+	100% {left: 95%;}
+}
+@keyframes
+move_x {
+	0% {left: 15%;}
+	100% {left: 95%;}
+}
